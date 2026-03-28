@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl border border-gray-100 p-8 text-center hover:shadow-xl transition-shadow duration-300">
+    <!-- Ảnh đại diện (Avatar) -->
+    <Image 
+        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-500 p-1" 
+        src="https://i.pinimg.com/474x/17/4a/ac/174aacca704cc0295fb67b579a863166.jpg"
+        alt="avt"
+        width={128}
+        height={128}
+    />
+    
+    <!-- Tên và Chức danh -->
+    <h2 class="text-3xl font-bold text-gray-800">Âu Khôi - Kyle</h2>
+    <p class="text-blue-600 font-semibold mt-2 tracking-wide uppercase text-sm">
+        A freelancer Manga Translator & Web Developer
+    </p>
+    
+    <!-- Đoạn giới thiệu ngắn (Bio) -->
+    <p class="text-gray-600 mt-5 text-base leading-relaxed">
+        Đam mê máy tính từ lúc 6 tuổi, thích vọc vạch code.<br>
+        Tối ngày cấm mặt vào mấy trang truyện để vẽ lại, không thì bạn có thể tìm thấy mình ở phòng gym nhó.
+    </p>
+</div>

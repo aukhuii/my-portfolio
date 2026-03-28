@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<Layout title="Dự Án & Sản Phẩm | Kyle">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <div class="mb-10">
+            <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">Các Dự Án Đã Thực Hiện</h1>
+            <p class="mt-3 text-lg text-gray-500">Tổng hợp các sản phẩm từ Manga cho đến các dự án Web Development.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Truyền dữ liệu cho dự án 1 -->
+            <ProjectCard 
+                title="Manga Translation & Redraw"
+                description="Clean text, redraw và typeset cho các bộ manga. Hầu hết đều là phi lợi nhuận."
+                tags={['Photoshop', 'Typesetting', 'Redraw']}
+                category="Dịch thuật/Redraw"
+            />
+
+            <!-- Truyền dữ liệu cho dự án 2 -->
+            <ProjectCard 
+                title="Website Interactive 8/3"
+                description="Dự án nho nhỏ và để dành cho chị em phụ nữ."
+                tags={['HTML/CSS', 'JavaScript', 'Astro']}
+                category="Valentine's Day Special"
+            />
+
+            <!-- Về sau có thêm dự án 3, 4, bạn chỉ cần copy 1 khối ProjectCard này là xong! -->
+
+        </div>
+    </main>
+</Layout>
